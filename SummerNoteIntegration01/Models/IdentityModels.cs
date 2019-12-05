@@ -25,6 +25,8 @@ namespace SummerNoteIntegration01.Models
         {
         }
 
+        public DbSet<Post> BlogPosts { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
